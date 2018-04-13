@@ -40,6 +40,7 @@
 #include "qtest/qttestframework.h"
 #include "quick/quicktestframework.h"
 #include "gtest/gtestframework.h"
+#include "catch/catchframework.h"
 
 #include <coreplugin/icore.h>
 #include <coreplugin/icontext.h>

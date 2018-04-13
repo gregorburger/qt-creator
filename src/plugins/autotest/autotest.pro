@@ -49,7 +49,17 @@ SOURCES += \
     quick/quicktestvisitors.cpp \
     quick/quicktestframework.cpp \
     quick/quicktest_utils.cpp \
-    testframeworkmanager.cpp
+    testframeworkmanager.cpp \
+    catch/catchvisitors.cpp \
+    catch/catchtreeitem.cpp \
+    catch/catchsettingspage.cpp \
+    catch/catchsettings.cpp \
+    catch/catchresult.cpp \
+    catch/catchparser.cpp \
+    catch/catchoutputreader.cpp \
+    catch/catchframework.cpp \
+    catch/catchconfiguration.cpp \
+    catch/catch_utils.cpp
 
 
 HEADERS += \
@@ -105,7 +115,18 @@ HEADERS += \
     quick/quicktestframework.h \
     testframeworkmanager.h \
     testrunconfiguration.h \
-    itestsettingspage.h
+    itestsettingspage.h \
+    catch/catchvisitors.h \
+    catch/catchsettingspage.h \
+    catch/catchtreeitem.h \
+    catch/catchsettings.h \
+    catch/catchresult.h \
+    catch/catchparser.h \
+    catch/catchoutputreader.h \
+    catch/catchframework.h \
+    catch/catchconstants.h \
+    catch/catchconfiguration.h \
+    catch/catch_utils.h
 
 RESOURCES += \
     autotest.qrc
@@ -113,7 +134,8 @@ RESOURCES += \
 FORMS += \
     testsettingspage.ui \
     qtest/qttestsettingspage.ui \
-    gtest/gtestsettingspage.ui
+    gtest/gtestsettingspage.ui \
+    catch/catchsettingspage.ui
 
 equals(TEST, 1) {
     HEADERS += autotestunittests.h
